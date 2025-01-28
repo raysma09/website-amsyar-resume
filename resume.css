@@ -1,0 +1,92 @@
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: #0e0e0e;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      background: linear-gradient(90deg, #5a189a, #d00000);
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #fff200;
+    }
+
+    nav {
+      display: flex;
+      gap: 1em;
+      margin-top: 1em;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5em 1em;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 2em auto;
+      padding: 1em;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1em;
+    }
+
+    .box {
+      background: #161616;
+      border: 2px solid #5a189a;
+      border-radius: 10px;
+      padding: 1.5em;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      border-color: #d00000;
+    }
+
+    .box h2 {
+      font-size: 1.5em;
+      color: #ff6b6b;
+    }
+
+    .box p {
+      font-size: 0.9em;
+      line-height: 1.5em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2em;
+      padding: 1em;
+      background-color: #5a189a;
+      color: #fff;
+      font-size: 0.8em;
+    }
+
+    .gif-container{
+      max-width: 1300px;
+      margin:0 auto;
+      padding: 1em;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }

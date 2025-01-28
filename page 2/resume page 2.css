@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: #0e0e0e;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background: linear-gradient(90deg, #5a189a, #d00000);
+}
+
+header h1 {
+  font-size: 2em;
+  color: #fff200;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.box {
+  background: #161616;
+  border: 2px solid #5a189a;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+transition: transform 0.3s;	
+}
+
+    .box:hover {
+      transform: scale(1.05);
+      border-color: #d00000;
+    }
+
+.project-box .content {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.project-box .video-thumbnail img {
+  cursor: pointer;
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-box .video-thumbnail img:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #161616;
+  padding: 1em;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content video {
+  width: 150%;
+  max-width: 800px;
+  border-radius: 30px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-box .content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100%;           /* Ensure it takes up the full height of the box */
+}
+
+.video-thumbnail img {
+  max-width: 120%;        /* Make sure the image doesn't overflow */
+  max-height: 120%;       /* Scale down to fit the box */
+  object-fit: contain;    /* Preserve aspect ratio while fitting */
+}
+
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #5a189a;
+  color: #fff;
+  font-size: 0.8em;
+}

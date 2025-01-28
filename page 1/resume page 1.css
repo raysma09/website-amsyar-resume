@@ -1,0 +1,115 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  font-family: 'Press Start 2P', cursive;
+  background: #0e0e0e;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background: linear-gradient(90deg, #5a189a, #d00000);
+}
+
+header h1 {
+  font-size: 2em;
+  color: #fff200;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+    .box:hover {
+      transform: scale(1.05);
+      border-color: #d00000;
+    }
+
+.container {
+	max-width: 1300px;
+	margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.box {
+  width: 100%;
+  padding: 2em;
+  background: #161616;
+  border: 2px solid #5a189a;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+	transition: transform 0.3s;
+    }
+
+    .box p {
+      font-size: 0.9em;
+      line-height: 1.5em;
+    }
+.banner-box {
+  width: 100%;
+  background: linear-gradient(90deg, #5a189a, #d00000);
+  color: #fff;
+  padding: 3em 2em;
+  border: none;
+}
+
+.banner-box .slider {
+  position: relative;
+    max-width: 100%;
+    margin: 20px fixed;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slides {
+  display: flex; position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+  transition: transform 0.5s ;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #5a189a;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.box li {
+      font-size: 0.9em;
+      line-height: 1.5em;
+    }
