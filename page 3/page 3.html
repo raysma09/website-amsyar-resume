@@ -20,18 +20,30 @@
   </nav>
 
   <div class="container">
-    <!-- My Photos Box -->
-    <div class="box">
-      <h2>My Photos</h2>
-      <div class="photo-gallery">
-        <img src="DSC_0213-Enhanced-NR.jpg"alt="Photo 1">
-        <img src="DSC_0217.jpg" alt="Photo 2">
-        <img src="DSC_0296.jpg" alt="Photo 3">
-        <img src="DSC_0130.JPG" alt="Photo 4">
-        <img src="DSC_0253.jpg"alt="Photo 5">
-      </div>
-    </div>
+   <!-- My Photos Box -->
+<div class="box">
+  <h2>My Photos</h2>
+  <div class="photo-gallery">
+    <img src="DSC_0213-Enhanced-NR.jpg" alt="Sunset View" onclick="openPopup('DSC_0213-Enhanced-NR.jpg', 'this is a cosplayer cosplaying a character named Krui Tepes from the anime called Owari No Seraph, this shot was taken at an anime event')">
+    <img src="DSC_0217.jpg" alt="Mountain View" onclick="openPopup('DSC_0217.jpg', 'the cosplayer in this pic is cosplaying as Choso (脹ちょう相そう Chōsō?) is a supporting character in the Jujutsu Kaisen series. this shot was taken at an anime event')">
+    <img src="DSC_0296.jpg" alt="City Lights" onclick="openPopup('DSC_0296.jpg', 'the cosplayer in this pic is cosplaying as Utau Hoshina (ほしな歌唄, Hoshina Utau) is one of the main characters in the anime and manga series, Shugo Chara. this shot was taken at an anime event ')">
+    <img src="DSC_0130.JPG" alt="Beach Waves" onclick="openPopup('DSC_0130.JPG', 'A student of University Malay degree graduation day. capturing the happy moment of someone accomplishing a goal')">
+    <img src="DSC_0253.jpg" alt="Forest Path" onclick="openPopup('DSC_0253.jpg', 'A cosplayer cosplaying as a character from blue lock sadly i dont know what character this is ')">
+  </div>
+</div>
 
+<!-- Photo Popup -->
+<div id="photoPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">✖</span>
+    <img id="popupImage" src="" alt="Popup Image">
+    <div class="photo-info">
+      <h3 id="photoTitle"></h3>
+      <p id="photoDescription"></p>
+    </div>
+  </div>
+</div> 
+	  
     <!-- My Drone Videos Box -->
     <div class="box">
       <h2>My Drone Videos</h2>

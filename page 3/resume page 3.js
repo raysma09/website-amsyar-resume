@@ -24,3 +24,15 @@ nextBtn.addEventListener('click', () => {
     updateVideoPosition();
   }
 });
+// Function to open the popup
+function openPopup(imageSrc, description) {
+  document.getElementById("popupImage").src = imageSrc;
+  document.getElementById("photoTitle").innerText = "Photo Details";
+  document.getElementById("photoDescription").innerText = description;
+  document.getElementById("photoPopup").style.display = "flex";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("photoPopup").style.display = "none";
+}
