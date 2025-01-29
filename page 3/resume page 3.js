@@ -37,3 +37,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+    // Select popup elements
+    const popup = document.getElementById("photoPopup");
+    const popupImage = document.getElementById("popupImage");
+    const photoTitle = document.getElementById("photoTitle");
+    const photoDescription = document.getElementById("photoDescription");
+    const closeButton = document.querySelector(".close-btn");
+
+    // Open Popup Function - Set as a global function
+    window.openPopup = function (imageSrc, description) {
+        popupImage.src = imageSrc;
+        photoTitle.innerText = "Photo Details";
+        photoDescription.innerText = description;
+        popup.style.display = "flex";
+    };
+
+    // Close Popup Function
+    window.closePopup = function () {
+        popup.style.display = "none";
+    };
+
+    // Close popup when clicking the close button
+    closeButton.addEventListener("click", closePopup);
+
+    // Close popup when clicking outside the content
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            closePopup();
+        }
+    });
+});
