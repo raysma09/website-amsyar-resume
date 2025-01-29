@@ -217,11 +217,11 @@ nav a:hover {
   font-size: 0.9em;
 }
 
-    footer {
-      text-align: center;
-      margin-top: 2em;
-      padding: 1em;
-      background-color: #5a189a;
-      color: #fff;
+ footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+   background-color: #5a189a;
+    color: #fff;
       font-size: 0.8em;
     }
